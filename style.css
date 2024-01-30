@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #001e4d;
+}
+
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 900px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.control{
+    text-align: left;
+    font-size: 1rem;
+    position: relative;
+}
+
+
+
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+}
+
+.radio-dot {
+    cursor: pointer;
+    border-radius: 290486px;
+    margin: 0 .5em;
+    flex-shrink: 0;
+    width: 1.25em;
+    height: 1.25em;
+    display: inline-block;
+    position: relative;
+    inset-block-start: .0625em;
+}
+
+.radio-dot-yesno {
+    cursor: pointer;
+    border-radius: 290486px;
+    margin: 0 .5em;
+    flex-shrink: 0;
+    width: 1.25em;
+    height: 1.25em;
+    position: relative;
+    inset-block-start: .0625em;
+    display: grid;
+    width: 50px;
+}
+
+/*
+.options-label-text {
+    text-align: right;
+    display: grid;
+    width: 50px;
+}
+*/
+
+th:first-child, td:first-child {
+    width: 75%;
+}
+th:not(:first-child), td:not(:first-child) {
+    width: 12.5%;
+}
+
+.btn:hover{
+    background: #222;
+    color: #fff;
+}
+
+#validate-btn{
+    background: #ffffff00;
+    color: #001e4d;
+    font-weight: 800;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}
+
+.dragElement {
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    font-size: small;
+    position: absolute;
+    cursor: move;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#dragZone {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    border: 2px dashed black;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#dropZone {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    border: 2px dashed black;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; /* Adjust width as needed */
+    margin-right: 2%; /* Adjust spacing between columns */
+}
+
+.dragZone, .dropZone {
+    margin-bottom: 10px; /* Adjust spacing between drag and drop zones */
+}
+
+.answerText{
+    width: 300px;
+    height: 40px;
+    font-size: small;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+}

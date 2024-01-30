@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrastrar</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Arrastrar</h1>
+            <div class="quiz">
+                <h2 id="question">Pregunta 1</h2>
+                    <div class="control" id="control">
+                        <div class="column" id="dragColumn">
+                            <h3 id="dragZoneLabel">Elementos</h3>
+                            <div id="dragZone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div class="dragElement" id="dragElement1" draggable="true" ondragstart="drag(event)">Virtual Network peering.</div>
+                            </div>
+                            <div id="dragZone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div class="dragElement" id="dragElement2" draggable="true" ondragstart="drag(event)">VPN Gateway.</div>
+                            </div>
+                        </div>
+                        <div class="column" id="dropColumn">
+                            <h3 id="dropZoneLabel">Respuestas</h3>
+                            <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)" data-correct="A"></div>
+                            <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)" data-correct="B"></div>
+                        </div>
+                        <div class="column" id="textColumn">
+                            <h3>Texto</h3>
+                            <div class="answerText">
+                                <span>Extends on-premise networks to the Microsoft cloud via private connection.</span>
+                            </div>
+                            <div class="answerText">
+                                <span>Combines two or more Azure virtual networks iunto a single logical virtual network.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="validate-btn">Confirmar</button>
+                <button id="next-btn" type="submit">
+                    <span>Siguiente</span>
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
